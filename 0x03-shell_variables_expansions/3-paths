@@ -1,4 +1,2 @@
 #!/bin/bash
-IFS=':' read -ra DIRS <<< "$PATH"
-COUNT=${#DIRS[@]}
-echo "There are $COUNT directories in the PATH."
+find . -type d | wc -l 
